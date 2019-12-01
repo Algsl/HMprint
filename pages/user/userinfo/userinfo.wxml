@@ -1,0 +1,46 @@
+<view class="bg_white">
+  <form class="userinfo_item" bindsubmit="formSubmit" bindreset="formReset" report-submit> 
+    <view class="userinfo_item">
+      <view class="item1">
+        <view class="title_color">姓名</view>
+        <input class="item1_input" name="name" value="{{userInfo.name}}" placeholder="请输入姓名"></input>
+      </view>
+      <view class="line_color_full"></view>
+      <view class='item2'>
+          <view class='title_color'>性别</view>
+          <radio-group class='item2_right'  name="sex">
+            <radio class='item2_right_sex'  value='0' checked='{{userInfo.sex==0}}'>男</radio>
+            <radio class='item2_right_sex'  value='1' checked='{{userInfo.sex==1}}'>女</radio>
+          </radio-group>
+        </view>
+      <view class="line_color_full"></view>
+
+      <view class='item3'>
+        <view class='title_color'>手机号</view>
+        <view class='item3_bottom'>
+          <input class='item3_bottom_input' placeholder='请输入手机号'  type='number' name="mobile" value='{{userInfo.mobile}}'></input>
+          <!--<button class='item3_bottom_btn' open-type='getPhoneNumber' bindgetphonenumber='getPhone'><text decode='true'>获&emsp;取</text></button>-->
+        </view>
+      </view>
+      <view class="line_color_full"></view>
+
+      <view class="item1">
+        <view class="title_color">宿舍楼</view>
+        <picker bindchange="bindPickerChange" name="floor" value="{{index}}" range="{{array}}">
+          <view class="picker">
+            {{array[index]}}
+          </view>
+        </picker>
+      </view>
+      <view class="line_color_full"></view>
+
+      <view class="item1">
+        <view class="title_color">宿舍号</view>
+        <input class="item1_input" name="dorm" value="{{userInfo.dorm}}" placeholder="请输入宿舍号，例如：332"></input>
+      </view>
+      <view class="line_color_full"></view>
+      
+      <button class='btn_save' form-type='submit' disabled='{{nobey}}'>保存</button>
+    </view>
+  </form>
+</view>

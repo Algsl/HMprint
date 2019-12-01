@@ -1,0 +1,58 @@
+.userinfo_item{
+  width: 100%;
+}
+.item1{
+  width: 100%;
+  margin-left: 4%;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+.item1_input{
+  width: 100%;
+  height: 40rpx;
+  font-size: 28rpx;
+  margin-top: 10rpx;
+}
+
+.item2{
+  width: 100%;
+  height: 140rpx;
+  margin-left: 4%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.item2_right{
+  position: absolute;
+  right: 4%;
+}
+.item2_right_sex{
+  margin-left: 30rpx;
+}
+
+.item3{
+  width: 100%;
+  margin-left: 4%;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+.item3_bottom{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.item3_bottom_input{
+  width: 400rpx;
+  margin-top: 10rpx;
+  font-size: 28rpx;
+}
+.picker{
+  font-size: 28rpx;
+  margin-top: 10rpx;
+}
+
+.btn_save{
+  margin-top: 100rpx;
+  background: #1EC996;
+  color: white;
+}

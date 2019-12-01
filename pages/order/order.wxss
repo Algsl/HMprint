@@ -1,0 +1,26 @@
+.swiper-tab{
+  width:100%;
+  height:100rpx;
+  border-bottom:2rpx solid #ccc;
+  font-weight: bold;
+}
+.swiper-tab-item{
+  display:inline-block;
+  width:33.3%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color:#A0A3AF;
+}
+.activity{
+  color:#515666;
+  font-size: 28rpx; 
+  border-bottom:5rpx solid #1EC996;
+}
+
+.swiper{
+  width: 100%;
+  height:100%;
+  position: fixed;
+}

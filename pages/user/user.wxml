@@ -1,0 +1,50 @@
+<view class="bg_gray">
+  <view class="user_head">
+    <button class="userinfo_btn"  wx:if='{{userInfo.nickName==null}}' open-type="getUserInfo" bindgetuserinfo="getUserInfo"><text decode='true'>请&emsp;授&emsp;权</text></button>
+    <view wx:else style="display:flex;flex-direction:row;">
+      <image class="user_head_img" src="{{userInfo.avatarUrl}}"/>
+      <view class="user_head_right">
+        <view class="user_nick_name">{{userInfo.nickName}}</view>
+        <view class="user_signature">欢迎使用恒煤打印小程序</view>
+      </view>
+    </view>
+  </view>
+  <view class="user_content1">
+    <view class="content1_item">
+      <image class="content1_item_img" src="../../images/payout.png"></image>
+      <view style="display:flex;flex-direction:column;margin-top:30rpx;">
+        <view class="title_color">支出</view>
+        <view class="item_price">20元</view>
+      </view>
+    </view>
+    <view class="line_color_split"></view>
+    <view class="content1_item">
+      <image class="content1_item_img" src="../../images/income.png"></image>
+      <view style="display:flex;flex-direction:column;margin-top:30rpx;">
+        <view class="title_color">收入</view>
+        <view class="item_price">20元</view>
+      </view>
+    </view>
+  </view>
+  <view class="user_content2">
+    <view class="content2_item" bindtap="userInfo">
+      <view class="content2_item_txt">个人信息</view>
+      <image class="content2_item_img" src="../../images/arrow.png"></image>
+    </view>
+    <view class="line"></view>
+    <view class="content2_item">
+      <view class="content2_item_txt">个人信息</view>
+      <image class="content2_item_img" src="../../images/arrow.png"></image>
+    </view>
+    <view class="line"></view>
+    <view class="content2_item">
+      <view class="content2_item_txt">个人信息</view>
+      <image class="content2_item_img" src="../../images/arrow.png"></image>
+    </view>
+    <view class="line"></view>
+    <view class="content2_item">
+      <view class="content2_item_txt">个人信息</view>
+      <image class="content2_item_img" src="../../images/arrow.png"></image>
+    </view>
+  </view>
+</view>

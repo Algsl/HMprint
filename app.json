@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/user/user",
+    "pages/order/order",
+    "pages/main/main",
+    "pages/user/userinfo/userinfo"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "恒煤打印",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/main/main",
+      "text": "首页",
+      "iconPath": "images/main_off.png",
+      "selectedIconPath": "images/main_on.png"
+    },{
+      "pagePath": "pages/order/order",
+      "text": "订单",
+      "iconPath": "images/order_off.png",
+      "selectedIconPath": "images/order_on.png"
+    },{
+      "pagePath": "pages/user/user",
+      "text": "我的",
+      "iconPath": "images/user_off.png",
+      "selectedIconPath": "images/user_on.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

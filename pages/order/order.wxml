@@ -4,14 +4,12 @@
   <view class="swiper-tab-item {{currentTab==2?'activity':''}}" data-current="2"  bindtap='clickTab'>已完成</view>
 </view>
 <swiper current="{{currentTab}}" duration='300' bindchange='swiperTab'class="swiper">
-  <swiper-item>
-    页面1
-  </swiper-item>
-  <swiper-item>
-    页面2
-  </swiper-item>
-  <swiper-item>
-   页面3
-  </swiper-item>
+  <view wx:for="{{3}}" wx:key="key">
+    <swiper-item>
+      <view wx:for="{{orderList}}" wx:key="key">
+        <view>{{item.mony}}</view>
+      </view>
+    </swiper-item>
+  </view>
 </swiper>
 
